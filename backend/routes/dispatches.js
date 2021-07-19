@@ -1,11 +1,15 @@
 const router = require('express').Router();
+const client = require('twilio')(
+    process.env.TWILIO_ACCOUNT_SID,
+    process.env.TWILIO_AUTH_TOKEN
+  );
 
 let Dispatch = require('../models/dispatch.model');
 
 router.route('/').get((req, res) => {
     Dispatch.find()
-        .then(dispatches => res.json(dispatches)
-        .catch(err => res.status(400).json('Error: ' + err)));
+        .then(dispatches => res.json(dispatches))
+        .catch(err => res.status(400).json('Error: ' + err));
 });
 
 router.route('/:id').get((req, res) => {
@@ -39,6 +43,19 @@ router.route('/add').post((req, res) => {
         dropoffinstructions,
         dropoffdate,
     });
+
+    client.messages.create({
+        from: process.env.TWILIO_PHONE_NUMBER,
+        to: newDispatch.driverphone,
+        body: pickuplocation,
+        phonenumber,
+        pickupinstructions,
+        pickupdate,
+        dropofflocation,
+        dropoffphonenumber,
+        dropoffinstructions,
+        dropoffdate, 
+    })
 
     newDispatch.save()
         .then(() => res.json('dispatch added!'))

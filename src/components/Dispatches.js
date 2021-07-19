@@ -66,6 +66,7 @@ constructor(props) {
             { this.dispatchList() }
           </tbody>
         </table>
+        <Link to={"/createdispatch"}>Create A dispatch</Link>
       </div>
     )
   }

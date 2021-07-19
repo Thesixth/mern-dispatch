@@ -139,61 +139,58 @@ export default class CreateDispatch extends Component {
         <h3>Create a Dispatch</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
-            <label>
-              Driver <select
-                              required
-                              className="form-control"
-                              value={this.state.drivername}
-                              onChange={this.onChangeDrivername}
-                              >
-                                
-                                {this.state.driver.map(function(driver) {
-                                  return <option key={driver}
-                                                value={driver}>{driver}
-                                                </option>;
-                                })
-                                }
-                              </select>
-            </label>
+            <label>Driver </label>
+              <select
+                      required
+                      className="form-control"
+                      value={this.state.drivername}
+                      onChange={this.onChangeDrivername}
+                      >
+                        
+                        {this.state.driver.map(function(driver) {
+                          return <option key={driver}
+                                        value={driver}>{driver}
+                                        </option>;
+                        })
+                        }
+                      </select>
+            
           </div>
           <div className="form-group">
             <label>
-              Driver's Phone number: <input 
-                                      type="tel"
-                                      className="form-control"
-                                      value={this.state.driverphone}
-                                      onChange={this.onChangeDriverPhone}
-                                      />
-            </label>
+              Driver's Phone number: </label>
+              <input 
+                    type="tel"
+                    className="form-control"
+                    value={this.state.driverphone}
+                    onChange={this.onChangeDriverPhone}
+                    />
           </div>
           <div className="form-group">
-            <label>
-              Pick up location: <input 
-                                      type="text"
-                                      className="form-control"
-                                      value={this.state.pickuplocation}
-                                      onChange={this.onChangePickUpLocation}
-                                      />
-            </label>
+            <label>Pick up location: </label>
+              <input 
+                    type="text"
+                    className="form-control"
+                    value={this.state.pickuplocation}
+                    onChange={this.onChangePickUpLocation}
+                    />
           </div>
           <div className="form-group">
-            <label>
-              Phone Number: <input 
-                                      type="tel"
-                                      className="form-control"
-                                      value={this.state.phonenumber}
-                                      onChange={this.onChangepickupPhoneNumber}
-                                      />
-            </label>
+            <label>Phone Number: </label>
+              <input 
+                    type="tel"
+                    className="form-control"
+                    value={this.state.phonenumber}
+                    onChange={this.onChangepickupPhoneNumber}
+                    />
           </div>
           <div className="form-group">
-            <label>
-              Pick up Instructions: <textarea 
-                                      className="form-control"
-                                      value={this.state.pickupinstructions}
-                                      onChange={this.onChangepickupinstructions}
-                                      />
-            </label>
+            <label>Pick up Instructions: </label>
+            <textarea 
+                      className="form-control"
+                      value={this.state.pickupinstructions}
+                      onChange={this.onChangepickupinstructions}
+                      />
           </div>
           <div className="form-group">
             <label>Pick up Date </label>
@@ -205,44 +202,41 @@ export default class CreateDispatch extends Component {
             </div>
           </div>
           <div className="form-group">
-            <label>
-              Drop off location: <input 
-                                      type="text"
-                                      className="form-control"
-                                      value={this.state.dropofflocation}
-                                      onChange={this.onChangedropofflocation}
-                                      />
-            </label>
+            <label>Drop off location: </label>
+              <input 
+                    type="text"
+                    className="form-control"
+                    value={this.state.dropofflocation}
+                    onChange={this.onChangedropofflocation}
+                    />
+          </div>
+          <div className="form-group">
+            <label>Drop off Phone: </label>
+            <input 
+                  type="tel"
+                  className="form-control"
+                  value={this.state.dropoffphonenumber}
+                  onChange={this.onChangedropoffphonenumber}
+                  />
           </div>
           <div className="form-group">
             <label>
-              Drop off Phone: <input 
-                                      type="tel"
-                                      className="form-control"
-                                      value={this.state.dropoffphonenumber}
-                                      onChange={this.onChangedropoffphonenumber}
-                                      />
-            </label>
+              Drop off instructions: </label>
+              <textarea
+                      className="form-control"
+                      value={this.state.dropoffinstructions}
+                      onChange={this.onChangedropoffinstructions}
+                      />
           </div>
           <div className="form-group">
             <label>
-              Drop off instructions: <textarea
-                                      className="form-control"
-                                      value={this.state.dropoffinstructions}
-                                      onChange={this.onChangedropoffinstructions}
-                                      />
-            </label>
-          </div>
-          <div className="form-group">
-            <label>
-              Drop off Date 
+              Drop off Date </label>
               <div>
                 <DatePicker
                   selected={this.state.dropoffdate}
                   onChange={this.onChangedropoffdate}
                   />
               </div>
-            </label>
           </div>
           <div className="form-group">
             <input type="submit" value="Submit" className="btn btn-primary" />
