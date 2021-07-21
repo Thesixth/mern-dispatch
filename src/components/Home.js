@@ -5,42 +5,45 @@ import '../styles/home.css';
 export default class Home extends Component {
   render() {
     return (
-      <div className="displayRelative">
+      <div className="container">
+        <header>
         <div className="banner">
-          <p>Fast Solutions to All Your Hauling Needs</p>
-          <a href="mailto:palinendir@gmail.com" title="email admin. opens in a new tab" target="_blank" rel="noopener noreferrer" className="quote">Get A Quote</a>
+          <div id="overlay"></div>
+          <p id="tag">Fast Solutions For All Your Hauling Needs</p>
+          <a href="mailto:palinendir@gmail.com" title="email admin. opens in a new tab" target="_blank" rel="noopener noreferrer" className="quote bannerquote">Get A Quote</a>
         </div>
-        <div className="displayAbsolute">
-          <p> Ready To Help</p>
-          <div className="left">
-            <ul aria-label="We Haul Everything">
+        </header>
+        <main className="displayAbsolute">
+          <h2> Here To Help</h2>
+          <div className="displayflex">
+            <div className="left">
+              <ul aria-label="We Haul Everything">
+                <li>
+                  Hazmat
+                </li>
+                <li>
+                  Avaition Parts
+                </li>
+                <li>
+                  Machines
+                </li>
+                <li>
+                  Oil Field Equipment
+                </li>
+                <li>
+                  Overdimentional loads
+                </li>
+                <li>
+                  Tanks 
+                </li>
+                <li>
+                  A lot more
+                </li>
+              </ul>
+            </div>
+            <div className="right">
+            <ul aria-label="Equiped Flat and Step decks">
               <li>
-                Hazmat
-              </li>
-              <li>
-                Avaition Parts
-              </li>
-              <li>
-                
-                Machines
-              </li>
-              <li>
-                Oil Field Equipment
-              </li>
-              <li>
-                Overdimentional loads
-              </li>
-              <li>
-                Tanks 
-              </li>
-              <li>
-                A lot more
-              </li>
-            </ul>
-          </div>
-          <div className="right">
-            <ul aria-label="Well equiped Flat and step decks">
-            <li>
                 Corner Protectors
               </li>
               <li>
@@ -63,8 +66,8 @@ export default class Home extends Component {
               </li>
             </ul>
           </div>
-        </div>
-        <h2>Our Services</h2>
+          </div>
+          <h3>Our Services</h3>
           <div>
             <h3>Full Truck Load</h3>
             <p>We will pick up, store, and deliver just about anything that fits on a truck. Let us handle the logistics while you focus on other aspects of your business.
@@ -75,6 +78,7 @@ export default class Home extends Component {
             <p>We will pick up, store, and deliver just about anything that fits on a truck. Let us handle the logistics while you focus on other aspects of your business.
             </p>
           </div>
+        </main>
       </div>
     )
   }

@@ -1,9 +1,3 @@
-.container{
-padding: 0;
-margin: 0 auto;
-
-}
-
-.navbar{
-  width: 100%;
+*{
+  margin: 0 auto;
 }
