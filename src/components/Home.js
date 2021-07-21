@@ -42,7 +42,7 @@ export default class Home extends Component {
               </ul>
             </div>
             <div className="right">
-            <ul aria-label="Equiped Flat and Step decks">
+            <ul aria-label="Flat and Step decks">
               <li>
                 Corner Protectors
               </li>
@@ -67,7 +67,7 @@ export default class Home extends Component {
             </ul>
           </div>
           </div>
-          <h3>Our Services</h3>
+          <h2>Our Services</h2>
           <div>
             <h3>Full Truck Load</h3>
             <p>We will pick up, store, and deliver just about anything that fits on a truck. Let us handle the logistics while you focus on other aspects of your business.

@@ -6,9 +6,9 @@ export default class Footer extends Component {
 
   render() {
     return (
-        <div>
+        <footer>
             <div className="callToAction">
-            <a href="mailto:palinendir@gmail.com" title="email admin. opens in a new tab" target="_blank" rel="noopener noreferrer" className="quote">Get A Quote</a>
+                <a href="mailto:palinendir@gmail.com" title="email admin. opens in a new tab" target="_blank" rel="noopener noreferrer" className="quote">Get A Quote</a>
             </div>
             <div className="quickLinks">
                 <p>Quick Links</p>
@@ -24,7 +24,7 @@ export default class Footer extends Component {
                 <p>+16048529193</p>
                 <a href="mailto:palinendir@gmail.com" title="email admin. opens in a new tab" target="_blank" rel="noopener noreferrer" >email</a>
             </div>
-        </div>
+        </footer>
     );
   }
 }

@@ -8,10 +8,12 @@ export default class Navbar extends Component {
     return (
       <div className="nav">
         <div className="brand"><Link to="/">E TRUCKING</Link></div>
-        <Link className="active" to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/dispatches">Dispatches</Link>
-        <Link to="/drivers">Drivers</Link>
+        <ul>
+          <li><Link className="active" to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/dispatches">Dispatches</Link></li>
+          <li><Link to="/drivers">Drivers</Link></li>
+        </ul>
     </div>
     );
   }
