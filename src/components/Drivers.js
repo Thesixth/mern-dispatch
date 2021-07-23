@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/dispatch.css';
 
 const Driver = props => (
   <tr>
@@ -35,7 +36,7 @@ export default class Drivers extends Component {
 
   render() {
     return (
-      <div>
+      <div className="content">
         <h3>Our Drivers</h3>
         <table className="table">
           <thead className="thead-light">

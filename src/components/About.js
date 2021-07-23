@@ -7,12 +7,8 @@ export default class About extends Component {
   
   render() {
     return (
-      <div className="container">
+      <div >
         <div className='head'>
-        <p>We have been in business from 2004 and look forward to grow more with your help.
-          We serve lanes from Western Canada to all over US and back to Western Canada. A majority of our dedicated team of drivers have over a decade of experinece hauling 
-          freight. 
-          </p>
         </div>
         <main className="main">
           <h3>Meet The Team</h3>

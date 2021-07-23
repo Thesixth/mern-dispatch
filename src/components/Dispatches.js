@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/dispatch.css';
 
 const Dispatch = props => (
   <tr>
@@ -49,7 +50,7 @@ constructor(props) {
   
   render() {
     return (
-      <div>
+      <div className="content">
         <h3>Open Dispatches</h3>
         <table className="table">
           <thead className="thead-light">
