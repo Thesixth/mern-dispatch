@@ -15,7 +15,7 @@ const team = [
     {
         name: 'Yuvi Singh',
         img: uv,
-        position: 'Operations Maneger',
+        position: 'Operations Manager',
 
     },
     {
@@ -37,7 +37,7 @@ const team = [
         
     },
     {
-        name: 'Jatoinder Kaur',
+        name: 'Jatinder Kaur',
         img: jatinder,
         position: 'Office Admin',
         

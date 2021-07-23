@@ -5,14 +5,11 @@
   .container {
       padding: 0;
       margin: 0;
+      display: grid;
   }
 
 a, Link { 
     text-decoration: none;
-}
-
-.container{ 
-    display: grid;
 }
 
 .displayAbsolute {
@@ -36,12 +33,12 @@ a, Link {
 #tag{
 
     position: absolute;
-    width: 100%;
+    width: 80%;
     left: 50%;
     top: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: 600;
     color: #fff;
     z-index: 2;
@@ -136,4 +133,32 @@ ul {
 
   h2 {
       margin-bottom: 30px;
+  }
+
+  /*Media queries*/
+
+  @media screen and (min-width: 500px) {
+      .displayflex {
+          width: 80vw;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-content: space-between;
+          padding-bottom: 20px;
+      }
+
+      .services {
+        padding: 0 20px;
+        width: 60vw;
+      }
+  }
+
+  @media screen and (min-width: 800px) {
+    .displayflex {
+        width: 70vw;
+    }
+
+    .services {
+        padding: 0 20px;
+        width: 60vw;
+      }
   }

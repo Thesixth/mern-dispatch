@@ -68,14 +68,14 @@ export default class Home extends Component {
           </div>
           </div>
           <h2>Our Services</h2>
-          <div>
+          <div className="services">
             <h3>Full Truck Load</h3>
-            <p>We will pick up, store, and deliver just about anything that fits on a truck. Let us handle the logistics while you focus on other aspects of your business.
+            <p>We move FTL's including lumber, AC & HVAC units, Machines, Over Dimensional, Air Craft Parts, Hazmat and much more with a lot of expereinced drivers from Western Canada to all over US and US to Western Canada.
             </p>
           </div>
-          <div>
-            <h3>Full Truck Load</h3>
-            <p>We will pick up, store, and deliver just about anything that fits on a truck. Let us handle the logistics while you focus on other aspects of your business.
+          <div className="services">
+            <h3>LTL & Partial Shipments</h3>
+            <p>Whether you wish to move a small skid or a expedited partial, we move all sorts of partials with a delivery schedule of 5 - 9 days depending on your requirment. Our staff is here to help.  We are eager to ensure that everything is done to your requirements.
             </p>
           </div>
         </main>

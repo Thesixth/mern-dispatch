@@ -17,7 +17,6 @@ function App() {
     <Router>
       <div className="container">
         <Navbar />
-        <br />
         <Route path="/" exact component={Home} />
         <Route path="/about" component={About} />
         <Route path="/editdispatch/:id" component={EditDispatch} />
